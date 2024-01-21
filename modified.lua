@@ -236,7 +236,7 @@ Booths_Broadcast.OnClientEvent:Connect(function(username, message)
 		    elseif item == "Shiny Hunter" then
                         coroutine.wrap(tryPurchase)(uid, gems, item, version, shiny, amount, username, class, playerid, buytimestamp, listTimestamp, snipeNormal)
                         return
-	            end
+                    end
                 end
             end
         end
