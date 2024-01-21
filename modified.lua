@@ -183,6 +183,7 @@ Booths_Broadcast.OnClientEvent:Connect(function(username, message)
                     if not string.find(item, "Huge Potion") <= 1000000 then
                         coroutine.wrap(tryPurchase)(uid, gems, item, version, shiny, amount, username, class, playerid, buytimestamp, listTimestamp, snipeNormal)
                         return
+                    return
 		elseif string.find(item, "Charm") and unitGems <= 15000 then
                     coroutine.wrap(tryPurchase)(uid, gems, item, version, shiny, amount, username, class, playerid, buytimestamp, listTimestamp, snipeNormal)
                     return
